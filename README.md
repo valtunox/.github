@@ -1,115 +1,64 @@
-# Valtunox
+# Valtunox Multi-Cloud Platform
 
-> **Cloud Managed Services - Fully Agentic**
+Valtunox is a multi-cloud platform engineered for teams that need reliable provisioning, governance, and automation across AWS, Azure, GitHub, GitLab (gitlan), and on-premise OpenClaws environments. We streamline delivery with opinionated blueprints, policy-driven guardrails, and Git-native workflows so you can ship faster without sacrificing control.
 
-Welcome to Valtunox, where cutting-edge cloud technology meets intelligent automation. We provide comprehensive cloud managed services powered by advanced agentic AI systems that proactively monitor, optimize, and manage your infrastructure 24/7.
+## 🚀 Platform at a Glance
+- **Multi-cloud by default**: Seamless orchestration for AWS, Azure, and OpenClaws-based private clouds.
+- **Git-native delivery**: First-class integrations with GitHub and GitLab for CI/CD, approvals, and audit trails.
+- **Provisioning automation**: Reusable IaC blueprints, environment vending, and drift detection.
+- **Secure & governed**: Policy controls, secrets management, and least-privilege access baked in.
+- **Observability & reliability**: End-to-end monitoring, SLO tracking, and self-healing actions.
 
-## 🚀 What We Do
+## 🧩 Supported Integrations
+### Source Control & CI/CD
+- **GitHub**: Actions workflows, environments, and reusable templates for application and platform pipelines.
+- **GitLab (gitlan)**: CI/CD pipelines, merge-request based promotion, and compliance checks.
 
-Valtunox delivers end-to-end cloud managed services that leverage autonomous AI agents to:
+### Cloud Targets
+- **AWS**: EKS/ECS, EC2/ASG, RDS, Lambda, API Gateway, VPC networking, and IAM controls.
+- **Azure**: AKS, App Service, Functions, SQL/Storage, VNets/Private Link, and AAD integration.
+- **OpenClaws**: On-prem/private cloud connectors for regulated or edge deployments (compute, networking, and storage orchestration).
 
-- **Intelligent Infrastructure Management**: AI agents continuously monitor and optimize your cloud resources
-- **Proactive Issue Resolution**: Autonomous detection and remediation of infrastructure issues before they impact your business
-- **Cost Optimization**: Smart resource allocation and right-sizing driven by AI analysis
-- **Security & Compliance**: Automated security monitoring and compliance enforcement
-- **Performance Tuning**: Continuous performance optimization across your entire stack
+### Platform Services
+- **Kubernetes**: Cluster lifecycle management, GitOps deployments, and add-on orchestration.
+- **Secrets & Identity**: Vault/KMS backends, SSO/SAML, and workload identity federation.
+- **Observability**: Centralized logging, metrics, traces, and alert routing with runbook automation.
 
-## 🤖 Full Agentic Approach
+## 🛠️ Provisioning & Delivery Model
+- **Blueprints**: Curated templates for apps, data pipelines, and platform foundations (networking, Kubernetes, security baselines).
+- **Environment vending**: One-click or API-driven creation of dev/stage/prod with consistent guardrails.
+- **GitOps**: Declarative state stored in GitHub/GitLab; changes flow through pull/merge requests with policy checks.
+- **Drift management**: Automated detection and guided remediation to keep infrastructure compliant.
 
-Our fully agentic platform means:
+## 🔐 Security & Compliance
+- Identity-aware pipelines with per-environment roles and short-lived credentials.
+- Guardrails for least privilege, encryption, tagging, and network isolation.
+- Compliance packs (SOC 2/ISO 27001-ready controls), evidence collection, and audit logs tied to Git history.
 
-- **Autonomous Operations**: AI agents that can make decisions and take actions independently
-- **Self-Healing Systems**: Automatic detection and resolution of issues without human intervention
-- **Continuous Learning**: Agents that learn from your environment and improve over time
-- **Predictive Analytics**: Proactive insights that prevent problems before they occur
-- **Intelligent Orchestration**: Multi-agent coordination for complex infrastructure management
+## 📈 Operations & Reliability
+- Golden signals and SLO dashboards for applications and platform components.
+- Runbook automation to remediate common failure modes (scaling, restarts, certificate rotation).
+- Chaos-safe rollouts with canary/blue-green strategies and automated rollback conditions.
 
-## ✨ Key Features
+## 🚦 Getting Started (Operators)
+1. **Connect Git**: Authorize GitHub and/or GitLab access for repositories and pipeline runners.
+2. **Connect clouds**: Add AWS, Azure, and (optionally) OpenClaws accounts/projects with least-privilege roles.
+3. **Select a blueprint**: Choose from application, data, or platform foundation blueprints.
+4. **Provision**: Launch environments via pipeline or UI; policies enforce security, cost, and compliance.
+5. **Deploy**: Use GitOps to promote changes through environments with approvals and automated checks.
 
-### Cloud Infrastructure Management
-- Multi-cloud support (AWS, Azure, GCP, and hybrid environments)
-- Infrastructure as Code (IaC) automation
-- Resource provisioning and deprovisioning
-- Capacity planning and scaling
+## 📂 About This Repository
+This `.github` repository hosts shared GitHub assets used across Valtunox projects (workflows, templates, community files).
 
-### Monitoring & Observability
-- Real-time infrastructure monitoring
-- Application performance monitoring (APM)
-- Log aggregation and analysis
-- Distributed tracing
-- Custom dashboards and alerting
-
-### Security & Compliance
-- 24/7 security monitoring
-- Vulnerability scanning and remediation
-- Compliance automation (SOC 2, ISO 27001, HIPAA, etc.)
-- Identity and access management
-- Encryption and secrets management
-
-### DevOps Automation
-- CI/CD pipeline management
-- Automated testing and deployment
-- Configuration management
-- Container orchestration (Kubernetes)
-- GitOps workflows
-
-### Cost Management
-- Real-time cost tracking and analysis
-- Budget alerts and forecasting
-- Resource optimization recommendations
-- Reserved instance and savings plan management
-- Showback and chargeback reporting
-
-## 🎯 Why Choose Valtunox?
-
-- **24/7 Autonomous Management**: Our AI agents never sleep, ensuring constant vigilance
-- **Reduce Operational Costs**: Automation reduces manual work by up to 80%
-- **Faster Incident Response**: Sub-minute detection and resolution of many issues
-- **Expertise at Scale**: Access to cloud best practices encoded in our agents
-- **Flexible & Scalable**: Adapts to your needs from startup to enterprise
-
-## 🏗️ Technology Stack
-
-Our platform is built on cutting-edge technologies:
-
-- **AI/ML**: Advanced machine learning models for prediction and optimization
-- **Cloud Native**: Kubernetes, Docker, serverless architectures
-- **Infrastructure as Code**: Terraform, CloudFormation, Pulumi
-- **Observability**: Prometheus, Grafana, ELK Stack, Datadog
-- **Automation**: Ansible, Python, Go
-- **Security**: HashiCorp Vault, AWS KMS, Cloud Security Posture Management
-
-## 📚 Getting Started
-
-### For New Customers
-
-1. **Assessment**: We analyze your current infrastructure
-2. **Planning**: Custom migration and management strategy
-3. **Onboarding**: Seamless integration with your existing systems
-4. **Activation**: AI agents begin monitoring and optimization
-5. **Continuous Improvement**: Ongoing optimization and support
-
-### For Developers
-
-This repository contains shared GitHub Actions workflows, issue templates, and other GitHub configuration files used across Valtunox repositories.
-
-```bash
-# To use shared workflows in your repository:
-# Reference them in your .github/workflows/*.yml files
-uses: valtunox/.github/.github/workflows/workflow-name.yml@main
+To reference a shared workflow from another repository:
+```yaml
+uses: valtunox/.github/.github/workflows/<workflow-name>.yml@main
 ```
 
-## 🤝 Support & Contact
-
-- **Website**: [www.valtunox.com](https://www.valtunox.com)
+## 🤝 Support
 - **Email**: support@valtunox.com
-- **Documentation**: [docs.valtunox.com](https://docs.valtunox.com)
-- **Status Page**: [status.valtunox.com](https://status.valtunox.com)
+- **Docs**: https://docs.valtunox.com
+- **Status**: https://status.valtunox.com
 
 ## 📄 License
-
 © 2026 Valtunox. All rights reserved.
-
----
-
-*Empowering businesses with intelligent cloud management*
