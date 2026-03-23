@@ -18,6 +18,7 @@ Valtunox is a multi-cloud platform engineered for teams that need reliable provi
 - **AWS**: EKS/ECS, EC2/ASG, RDS, Lambda, API Gateway, VPC networking, and IAM controls.
 - **Azure**: AKS, App Service, Functions, SQL/Storage, VNets/Private Link, and AAD integration.
 - **OpenClaws**: On-prem/private cloud connectors for regulated or edge deployments (compute, networking, and storage orchestration).
+- _The OpenClaws spelling is retained intentionally per the customer-provided platform name._
 
 ### Platform Services
 - **Kubernetes**: Cluster lifecycle management, GitOps deployments, and add-on orchestration.
@@ -33,7 +34,7 @@ Valtunox is a multi-cloud platform engineered for teams that need reliable provi
 ## 🔐 Security & Compliance
 - Identity-aware pipelines with per-environment roles and short-lived credentials.
 - Guardrails for least privilege, encryption, tagging, and network isolation.
-- Compliance packs (SOC 2/ISO 27001-ready controls), evidence collection, and audit logs tied to Git history.
+- Compliance packs (SOC 2/ISO/IEC 27001-ready controls), evidence collection, and audit logs tied to Git history.
 
 ## 📈 Operations & Reliability
 - Golden signals and SLO dashboards for applications and platform components.
