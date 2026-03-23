@@ -58,8 +58,8 @@ uses: valtunox/.github/.github/workflows/<workflow-name>.yml@main
 
 ## 🤝 Support
 - **Email**: support@valtunox.com
-- **Docs**: https://docs.valtunox.com
-- **Status**: https://status.valtunox.com
+- **Docs**: [docs.valtunox.com](https://docs.valtunox.com)
+- **Status**: [status.valtunox.com](https://status.valtunox.com)
 
 ## 📄 License
 © 2026 Valtunox. All rights reserved.
