@@ -1,6 +1,6 @@
 # Valtunox Multi-Cloud Platform
 
-Valtunox is a multi-cloud platform engineered for teams that need reliable provisioning, governance, and automation across AWS, Azure, GitHub, GitLab (gitlan), and on-premise OpenClaws environments. We streamline delivery with opinionated blueprints, policy-driven guardrails, and Git-native workflows so you can ship faster without sacrificing control.
+Valtunox is a multi-cloud platform engineered for teams that need reliable provisioning, governance, and automation across AWS, Azure, GitHub, GitLab, and on-premise OpenClaws environments. We streamline delivery with opinionated blueprints, policy-driven guardrails, and Git-native workflows so you can ship faster without sacrificing control.
 
 ## 🚀 Platform at a Glance
 - **Multi-cloud by default**: Seamless orchestration for AWS, Azure, and OpenClaws-based private clouds.
@@ -12,7 +12,7 @@ Valtunox is a multi-cloud platform engineered for teams that need reliable provi
 ## 🧩 Supported Integrations
 ### Source Control & CI/CD
 - **GitHub**: Actions workflows, environments, and reusable templates for application and platform pipelines.
-- **GitLab (gitlan)**: CI/CD pipelines, merge-request based promotion, and compliance checks.
+- **GitLab**: CI/CD pipelines, merge-request based promotion, and compliance checks.
 
 ### Cloud Targets
 - **AWS**: EKS/ECS, EC2/ASG, RDS, Lambda, API Gateway, VPC networking, and IAM controls.
